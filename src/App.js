@@ -5,7 +5,7 @@ const App = () => {
     const [input, setInput] = useState('');
 
     const calculateResult = (input) => {
-        let result;
+
        try {
         const operators = ['+', '-', '*', '/'];
         let operator = null;
@@ -62,7 +62,7 @@ const App = () => {
     }
   return (
     <div className='container'>
-        <div className='cal'>
+        <div className='calc'>
             <h1 id='input'>{input}</h1>
             <div>
                 <button onClick={() => handleButtonClick('C')}>C</button>
